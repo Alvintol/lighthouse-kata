@@ -7,7 +7,7 @@ const multiplicationTable = function (maxValue) {
   let table = "";
   for (let a = 1; a <= maxValue; a++) {
     for (let b = 1; b <= maxValue; b++) {
-      console.log(b);
+      // console.log(b);
       table += a * b + " ";
     }
     table += "\n";
@@ -15,6 +15,6 @@ const multiplicationTable = function (maxValue) {
   return table;
 };
 
-console.log(multiplicationTable(1));
-console.log(multiplicationTable(5));
+// console.log(multiplicationTable(1));
+// console.log(multiplicationTable(5));
 console.log(multiplicationTable(10));
