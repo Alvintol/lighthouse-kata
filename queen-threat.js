@@ -26,7 +26,7 @@ function generateBoard(whiteQueen, blackQueen) {
 function queenThreat() {
   for (let c = 0; c < whiteQueen.length; c++) {
     for (let d = 0; d < blackQueen.length; d++) {
-      if (whiteQueen[c] === blackQueen[d]) {
+      if (whiteQueen[c] === blackQueen[d] || whiteQueen[0] - blackQueen[0] === whiteQueen[1] - blackQueen[1]) {
         return true;
       }
     }
